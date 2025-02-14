@@ -1,11 +1,5 @@
 #!/bin/bash
-
-<< comment
-anything
-comment
-
-name="Rahul"
-
-echo "Hello, $name and date is $(date)"
-
-echo "the characters $0 $1 $2"  
+for ((i=1; num<=5; num++));
+do
+    mkdir "demo$num"
+done
