@@ -1,5 +1,11 @@
 #!/bin/bash
 
-echo "TWS. Hello dosto"
+<< comment
+anything
+comment
 
-echo "TWS. Call me"
+name="Rahul"
+
+echo "Hello, $name and date is $(date)"
+
+echo "the characters $0 $1 $2"  
