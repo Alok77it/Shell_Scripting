@@ -23,10 +23,8 @@ read -p "Enter a number: " num
 rev=0
 while [ $num -gt 0 ]
 do
-    rem=$((num % 10))
-    rev=$((rev * 10 + rem))
-    num=$((num / 10))
+    rem=$((num % 10)) # extracting the last digit
+    rev=$((rev * 10 + rem)) # adding the last digit to the reverse number
+    num=$((num / 10)) # removing the last digit
 done
 echo "Reverse of the number is $rev"
-
-#4.Print the Fibonacci series up to N terms 
