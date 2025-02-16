@@ -1,12 +1,14 @@
 #!/bin/bash
 
-function is_loyal(){
-    read -p "$1 ne mud ke kise dekha: " bandi
-    if [ $bandi == "bapuji" ]; then
-        echo "loyal"
-    else
-        echo "not loyal"
-    fi
+create_directory() {
+  mkdir demo
 }
 
-is_loyal "tom"
+if [ -d demo ]; then
+  echo "Directory exists"
+else
+  echo "Directory does not exist"
+  create_directory
+fi
+  
+echo "this code will not work"
