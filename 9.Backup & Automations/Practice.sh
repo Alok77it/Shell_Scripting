@@ -14,8 +14,6 @@ fi
 
 #2. Automate daily backup using cron jobs
 
-#!/bin/bash
-
 # Variables
 SOURCE_DIR="/home/user/data"
 BACKUP_DIR="/backup"
